@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    //code written in @{} is C# and It can be used in page by @ sign
+    // and multiple lies of c# can be represent as if @{}
+    ViewData["Title"] = "Title";
+    ViewData["Name"] = "Dipali";
+    ViewBag.AName = "SiyaRam";
+    ViewBag.Message = "22 jan 2024";
+    //  Layout = "~etc/my/cshtml";
+    var myname = "Dipak Wani";
+}
+
+<title> @ViewData["Title"]</title>
+<h1>Welcome to My Custom DemoRazor Page</h1>
+
+<p>@myname;
+    @DateTime.Now;
+    @ViewData["Name"];
+</p>
+
+<p>
+    Name: @ViewBag.AName <br />
+    Message: @ViewBag.Message <br />
+    Name Of institute: @ViewData["Cdac"] <br />
+    Address: @ViewData["Address"]<br />
+    City : @ViewBag.Address.City
+</p>
